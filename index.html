@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://wa.me/5214402093207">
-    <title>Redirigiendo a WhatsApp...</title>
+    <title>Redirigiendo...</title>
+    <script>
+        setTimeout(function() {
+            let numero = "5214402093207"; // Reemplaza con tu número de WhatsApp
+            let url = "https://wa.me/" + numero;
+            window.location.href = url;
+        }, 1000); // Espera 1 segundo antes de redirigir
+    </script>
 </head>
 <body>
-    <p>Si la redirección no ocurre automáticamente, haz <a href="https://wa.me/5214402093207">clic aquí</a>.</p>
+    <p>Estamos redirigiéndote... Si no ocurre automáticamente, haz <a id="link" href="#">clic aquí</a>.</p>
+    <script>
+        document.getElementById("link").href = "https://wa.me/5214402093207"; // Asegurar que el enlace funcione manualmente
+    </script>
 </body>
 </html>
